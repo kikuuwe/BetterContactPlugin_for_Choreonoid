@@ -51,7 +51,7 @@ BCCoreSiconos::BCCoreSiconos(int maxNumGaussSeidelIteration, double gaussSeidelE
     prob->q             = 0;
     numops->verboseMode = 0;  /*************/
 //  SICONOS_FRICTION_3D_projectionOnCylinder;
-    frictionContact3D_setDefaultSolverOptions(solops, SICONOS_FRICTION_3D_NSGS   );
+    fc3d_setDefaultSolverOptions(solops, SICONOS_FRICTION_3D_NSGS   );
 //  solops->iparam[1] = 1; // This makes computation slower
 #endif
     setGaussSeidelMaxNumIterations(maxNumGaussSeidelIteration);
@@ -165,7 +165,7 @@ bool BCCoreSiconos::callSolver(MatrixX& Mlcp, VectorX& b, VectorX& solution, Vec
     sparsify_A( prob->M->matrix1 , Mlcp , NC , &os);
   }
   
-  frictionContact3D_driver(prob,reaction,velocity,solops, numops);
+  fc3d_driver(prob,reaction,velocity,solops, numops);
   
   double* prea = reaction ;
   for(int ia=0;ia<NC;ia++)for(int i=0;i<3;i++) solution(((i==0)?(ia):(2*ia+i+NC-1))) = prea[3*ia+i] ;
