@@ -36,7 +36,7 @@
 
 #ifdef BUILD_BCPLUGIN_WITH_SICONOS
 #include "SiconosNumerics.h"
-#include "FrictionContact3D_compute_error.h"
+#include "FrictionContactProblem.h"
 //class FrictionContactProblem ;
 //class NumericsOptions        ;
 //class SolverOptions          ;

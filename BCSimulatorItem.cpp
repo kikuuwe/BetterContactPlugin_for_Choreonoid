@@ -408,7 +408,7 @@ void BCSimulatorItem::setKinematicWalkingEnabled(bool on)
 }
 
 
-ItemPtr BCSimulatorItem::doDuplicate() const
+Item* BCSimulatorItem::doDuplicate() const
 {
     return new BCSimulatorItem(*this);
 }
