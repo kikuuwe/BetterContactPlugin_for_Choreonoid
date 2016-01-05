@@ -8,13 +8,7 @@ endif()
 
 include(cmake/Findsiconos.cmake)
 
-configure_file (${CMAKE_CURRENT_SOURCE_DIR}/Config.hpp.in
-                ${CMAKE_CURRENT_BINARY_DIR}/Config.hpp)
-
-message (STATUS "Generating Config.hpp ...")
 message (STATUS "USE_SICONOS=${BUILD_BCPLUGIN_WITH_SICONOS}")
-
-
 
 set(target CnoidBCPlugin)
 
@@ -37,6 +31,7 @@ if(BUILD_BCPLUGIN_WITH_SICONOS)
   include_directories(
     ${SICONOS_INCLUDE_DIR}
   )
+  add_definitions( -DBUILD_BCPLUGIN_WITH_SICONOS )
 endif()
 
 make_gettext_mofiles(${target} mofiles)

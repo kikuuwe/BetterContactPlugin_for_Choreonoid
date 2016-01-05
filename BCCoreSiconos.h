@@ -32,8 +32,6 @@
 #ifndef CNOID_BCPLUGIN_CORE_H
 #define CNOID_BCPLUGIN_CORE_H
 
-#include "Config.hpp"
-
 #ifdef BUILD_BCPLUGIN_WITH_SICONOS
 #include "SiconosNumerics.h"
 #include "FrictionContactProblem.h"
