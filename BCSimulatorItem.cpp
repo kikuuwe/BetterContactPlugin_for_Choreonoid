@@ -414,7 +414,7 @@ Item* BCSimulatorItem::doDuplicate() const
 }
 
 
-SimulationBodyPtr BCSimulatorItem::createSimulationBody(BodyPtr orgBody)
+SimulationBody* BCSimulatorItem::createSimulationBody(Body* orgBody)
 {
     SimulationBody* simBody = 0;
     DyBody* body = new DyBody(*orgBody);
