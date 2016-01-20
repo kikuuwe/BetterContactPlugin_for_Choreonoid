@@ -33,6 +33,14 @@
 
 Instructions
 
+[0] Simplest way to install
+
+sudo add-apt-repository ppa:hrg/daily
+sudo apt-get update
+sudo apt-get install choreonoid-bettercontact-plugin
+
+The package is provided at 
+[https://code.launchpad.net/~hrg/+recipe/hrg-packaging-bettercontact-plugin-daily]
 
 [1] About BetterContactPlugin
 
