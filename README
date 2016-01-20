@@ -1,0 +1,54 @@
+#  BetterContactPlugin - a plugin for Choreonoid to use penalty-based method.
+#  
+#  Author: Ryo Kikuuwe
+#  Author: Shin'ichiro Nakaoka
+#  
+#  Copyright (c) 2014-2015 Ryo Kikuuwe
+#  Copyright (c) 2007-2015 Shin'ichiro Nakaoka
+#  Copyright (c) 2014-2015 Kyushu University
+#  Copyright (c) 2007-2015 National Institute of Advanced Industrial
+#                          Science and Technology (AIST)
+#  
+#  BetterContactPlugin is a plugin for Choreonoid to use penalty-based method.
+#  
+#  BetterContactPlugin is a free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#  PenaltyMethodPlugin is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#  
+#  You should have received a copy of the GNU General Public License
+#  along with PenaltyMethodPlugin; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+#  
+#  Contact: Ryo Kikuuwe, kikuuwe@ieee.org
+#
+
+----------------------------------------------
+  README File for BetterContactPlugin
+----------------------------------------------
+
+Instructions
+
+
+[1] About BetterContactPlugin
+
+Now, BetterContactPlugin has been known to work on:
+ - x86_64 Ubuntu 14.04 LTS.
+ - Choreonoid 1.5.0
+If you find that it works on another platform successfully, please let
+us know.
+
+[2] Prerequisite
+
+None
+
+[3] Install of BetterContactPlugin
+ 
+Simply put the files in this git directory to
+   ext/BetterContactPlugin/
+under the Choreonoid directory.
+Configure "cmake" appropriately and compile it.
