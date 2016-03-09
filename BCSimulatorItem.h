@@ -39,6 +39,7 @@ ORIGINAL FILE: src/BodyPlugin/AISTSimulatorItem.h
 
 #include <cnoid/SimulatorItem>
 #include <cnoid/EigenTypes>
+#include <cnoid/BodyMotionItem>
 //#include "exportdecl.h"
 
 namespace cnoid {
