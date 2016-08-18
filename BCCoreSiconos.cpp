@@ -78,7 +78,7 @@ BCCoreSiconos::~BCCoreSiconos()
 {
     DeleteBuffer();
 #ifdef BUILD_BCPLUGIN_WITH_SICONOS
-    deleteSolverOptions(solops);
+    solver_options_delete(solops);
     delete  solops ;
     delete  prob->M ->matrix1;
     delete  prob->M     ;
