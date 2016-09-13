@@ -46,7 +46,7 @@ class Link;
 class BCCFSImpl;
 class WorldBase;
 class CollisionDetector;
-typedef boost::shared_ptr<CollisionDetector> CollisionDetectorPtr;
+typedef std::shared_ptr<CollisionDetector> CollisionDetectorPtr;
 
 class CNOID_EXPORT BCConstraintForceSolver
 {
