@@ -234,7 +234,7 @@ public:
         double epsilon;
 /*BC*/  bool   isPenaltyBased;
     };
-    typedef boost::shared_ptr<LinkPair> LinkPairPtr;
+    typedef std::shared_ptr<LinkPair> LinkPairPtr;
 
     CollisionDetectorPtr collisionDetector;
     vector<int> geometryIdToBodyIndexMap;
@@ -254,7 +254,7 @@ public:
         Vector3 jointPoint[2];
         Vector3 jointConstraintAxes[3];
     };
-    typedef boost::shared_ptr<ExtraJointLinkPair> ExtraJointLinkPairPtr;
+    typedef std::shared_ptr<ExtraJointLinkPair> ExtraJointLinkPairPtr;
     vector<ExtraJointLinkPairPtr> extraJointLinkPairs;
 
     bool is2Dmode;
@@ -266,7 +266,7 @@ public:
     public:
         double globalYpositions[3];
     };
-    typedef boost::shared_ptr<Constrain2dLinkPair> Constrain2dLinkPairPtr;
+    typedef std::shared_ptr<Constrain2dLinkPair> Constrain2dLinkPairPtr;
     vector<Constrain2dLinkPairPtr> constrain2dLinkPairs;
         
 
