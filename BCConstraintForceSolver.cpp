@@ -801,7 +801,7 @@ void BCCFSImpl::setConstraintPoints()
     timer.begin();
 #endif
 
-    collisionDetector->detectCollisions(boost::bind(&BCCFSImpl::extractConstraintPoints, this, _1));
+    collisionDetector->detectCollisions(std::bind(&BCCFSImpl::extractConstraintPoints, this, _1));
 
 #ifdef ENABLE_SIMULATION_PROFILING
         collisionTime = timer.measure();
