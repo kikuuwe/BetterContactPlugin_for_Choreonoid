@@ -61,6 +61,7 @@ ORIGINAL FILE: src/Body/ConstraintForceSolver.h
 #include "BCCoreQMR.h"
 
 using namespace std;
+using namespace std::placeholders;
 using namespace cnoid;
 
 // Is LCP solved by Iterative or Pivoting method ?
