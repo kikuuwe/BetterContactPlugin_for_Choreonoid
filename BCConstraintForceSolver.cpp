@@ -48,9 +48,9 @@ ORIGINAL FILE: src/Body/ConstraintForceSolver.h
 #include <cnoid/AISTCollisionDetector>
 #include <cnoid/TimeMeasure>
 #include <boost/format.hpp>
-#include <boost/tuple/tuple.hpp>
+//#include <boost/tuple/tuple.hpp>
 #include <boost/random.hpp>
-#include <boost/bind.hpp>
+//#include <boost/bind.hpp>
 #include <limits>
 
 #include <fstream>
